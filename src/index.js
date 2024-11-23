@@ -8,6 +8,7 @@ const newCharacterForm = document.getElementById('new-character')
 fetch('http://localhost:3000/nintendoCharacters')
 .then(response => response.json())
 .then(characters => {
+  renderTop(character)
   characters.forEach( character => {
     renderTop(character)
     renderCenter(character)
