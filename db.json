@@ -1,0 +1,43 @@
+{
+  "nintendoCharacters": [
+    { "id": 1,
+      "amiiboSeries": "Super Smash Bros.",
+      "character": "Link",
+      "gameSeries": "The Legend of Zelda",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-00040002.png",
+      "name": "Link"
+    },
+    {
+      "id": 2,
+      "amiiboSeries": "Super Mario Bros.",
+      "character": "Mario",
+      "gameSeries": "Super Mario",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000300-03a60102.png",
+      "name": "Mario - Cat"
+    },
+    {
+      "id": 3,
+      "amiiboSeries": "Super Smash Bros.",
+      "character": "Pikachu",
+      "gameSeries": "Pokemon",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19190000-00090002.png",
+      "name": "Pikachu"
+    },
+    {
+      "id": 4,
+      "amiiboSeries": "Super Smash Bros.",
+      "character": "Donkey Kong",
+      "gameSeries": "Super Mario",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-00030002.png",
+      "name": "Donkey Kong"
+    },
+    {
+      "id": 5,
+      "amiiboSeries": "Super Smash Bros.",
+      "character": "Cloud Strife",
+      "gameSeries": "Final Fantasy",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000000-02590002.png",
+      "name": "Cloud"
+    }
+  ]
+}
