@@ -3,12 +3,11 @@ const characterElement = document.getElementById('character-selection')
 const nameElement = document.getElementById('name-display')
 const worldElement = document.getElementById('world-display')
 const imgDetailElement = document.querySelector('.detail-image')
+const newCharacterForm = document.getElementById('new-character')
 
 fetch('http://localhost:3000/nintendoCharacters')
 .then(response => response.json())
 .then(characters => {
-/*   const h1NameElement = document.createElement('h1')
-  h1NameElement.textContent = character.character */
   characters.forEach( character => {
     renderTop(character)
     renderCenter(character)
@@ -29,6 +28,35 @@ const renderCenter = (characters) => {
   worldElement.innerText = characters.gameSeries
   imgDetailElement.src = characters.image
 }
+
+newCharacterForm.addEventListener('submit', (event) => {
+  event.preventDefault()
+
+  const newCharacterName = document.getElementById("new-name")
+  const newCharacterImage = document.getElementById('new-image')
+  const newCharacterWorld = document.getElementById('starsIn')
+
+  const newCharacter =  {
+    name: newCharacterName.value,
+    image: newCharacterImage.value,
+    starsIn: newCharacterWorld.value
+  }
+  
+  renderTop(newCharacter)
+
+  fetch('http://localhost:3000/nintendoCharacters'),{
+    method: 'POST',
+    headers: {
+      "Constent-Type": "application/json"
+    },
+    body: JSON.stringify({newCharacter
+    })
+    
+  }
+  newCharacterForm.reset()
+})
+
+
 
 
 
