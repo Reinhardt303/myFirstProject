@@ -21,25 +21,25 @@ header {
   background-color: black;
 }
 
-#ramen-menu {
+#characters {
   display: flex;
   overflow-x: auto;
   margin: 1rem 0;
   max-width: calc(100vw - 2rem);
 }
 
-#ramen-menu img {
+#characters {
   flex: 0 1 auto;
   height: 150px;
   margin-right: 0.5rem;
   cursor: pointer;
 }
 
-#ramen-menu img:last-child {
+#characters img:last-child {
   margin-right: 0;
 }
 
-#ramen-detail {
+#character-detail {
   position: relative;
 }
 
