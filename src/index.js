@@ -43,18 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
       gameSeries: newCharacterWorld.value
     }
     
-    renderTop(newCharacter)
+renderTop(newCharacter)
   
-    fetch('http://localhost:3000/nintendoCharacters'),{
-      method: 'POST',
-      headers: {
-        "Constent-Type": "application/json"
-      },
-      body: JSON.stringify({newCharacter
-      })
-      
-    }
-    newCharacterForm.reset()
+newCharacterForm.reset()
   })
   
 })
